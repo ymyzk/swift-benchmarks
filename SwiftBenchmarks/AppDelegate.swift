@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SwiftArrayDictionaryBenchmark
+//  SwiftBenchmarks
 //
 //  Copyright (c) 2014 Yusuke Miyazaki.
 //

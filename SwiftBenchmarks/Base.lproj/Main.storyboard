@@ -7,7 +7,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftArrayDictionaryBenchmark" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftBenchmarks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,20 +17,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIx-w8-Nu7">
-                                <rect key="frame" x="229" y="282" width="142" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Run Benchmark">
+                                <rect key="frame" x="182" y="283" width="236" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="NSMutableArray / Swift Array">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="runBenchmark:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TdS-aY-7dj"/>
+                                    <action selector="runArrayBenchmark:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eKc-st-bbq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bag-7o-Gp9">
+                                <rect key="frame" x="143" y="325" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="NSMutableDictionary / Swift Dictionary">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="runDictionaryBenchmark:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5XX-9O-V5K"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="dIx-w8-Nu7" firstAttribute="centerX" secondItem="bag-7o-Gp9" secondAttribute="centerX" id="7lM-zA-0lb"/>
                             <constraint firstAttribute="centerY" secondItem="dIx-w8-Nu7" secondAttribute="centerY" id="KfY-zX-lmP"/>
                             <constraint firstAttribute="centerX" secondItem="dIx-w8-Nu7" secondAttribute="centerX" id="NcP-Pf-Sff"/>
+                            <constraint firstItem="bag-7o-Gp9" firstAttribute="top" secondItem="dIx-w8-Nu7" secondAttribute="bottom" constant="8" id="aDD-ed-o69"/>
                         </constraints>
                     </view>
                 </viewController>

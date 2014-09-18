@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  SwiftArrayDictionaryBenchmark
+//  SwiftBenchmarks
 //
 //  Copyright (c) 2014 Yusuke Miyazaki.
 //
@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBAction func runBenchmark(sender: AnyObject) {
+    @IBAction func runArrayBenchmark(sender: AnyObject) {
         var start: NSDate
         
         start = NSDate()
@@ -25,6 +25,21 @@ class ViewController: UIViewController {
         }
         let swiftArrayResult = -start.timeIntervalSinceNow
         
+        let result = String(
+            format: "%@: %.3f [sec]\n%@: %.3f [sec]",
+            "NSMutableArray", mutableArrayResult,
+            "Swift Array", swiftArrayResult)
+        println(result)
+        UIAlertView(
+            title: "Result",
+            message: result,
+            delegate: nil,
+            cancelButtonTitle: "OK").show()
+    }
+    
+    @IBAction func runDictionaryBenchmark(sender: AnyObject) {
+        var start: NSDate
+        
         start = NSDate()
         let mutableDictionary = NSMutableDictionary()
         for i in 0...100000 {
@@ -40,9 +55,7 @@ class ViewController: UIViewController {
         let swiftDictionaryResult = -start.timeIntervalSinceNow
         
         let result = String(
-            format: "%@: %.3f [sec]\n%@: %.3f [sec]\n%@: %.3f [sec]\n%@: %.3f [sec]",
-            "NSMutableArray", mutableArrayResult,
-            "Swift Array", swiftArrayResult,
+            format: "%@: %.3f [sec]\n%@: %.3f [sec]",
             "NSMutableDictionary", mutableDictionaryResult,
             "Swift Dictionary", swiftDictionaryResult)
         println(result)

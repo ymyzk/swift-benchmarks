@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7051A00B19C8721F00109CD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7051A00A19C8721F00109CD3 /* AppDelegate.swift */; };
-		7051A00D19C8721F00109CD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7051A00C19C8721F00109CD3 /* ViewController.swift */; };
-		7051A01019C8721F00109CD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7051A00E19C8721F00109CD3 /* Main.storyboard */; };
-		7051A01219C8721F00109CD3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7051A01119C8721F00109CD3 /* Images.xcassets */; };
-		7051A01519C8721F00109CD3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7051A01319C8721F00109CD3 /* LaunchScreen.xib */; };
+		70DFC10419CA8454005F8216 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DFC0FB19CA8454005F8216 /* AppDelegate.swift */; };
+		70DFC10519CA8454005F8216 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70DFC0FD19CA8454005F8216 /* LaunchScreen.xib */; };
+		70DFC10619CA8454005F8216 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70DFC0FF19CA8454005F8216 /* Main.storyboard */; };
+		70DFC10719CA8454005F8216 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DFC10119CA8454005F8216 /* ViewController.swift */; };
+		70DFC10819CA8454005F8216 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70DFC10219CA8454005F8216 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7051A00519C8721F00109CD3 /* SwiftArrayDictionaryBenchmark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftArrayDictionaryBenchmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7051A00919C8721F00109CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7051A00A19C8721F00109CD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7051A00C19C8721F00109CD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7051A00F19C8721F00109CD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7051A01119C8721F00109CD3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		7051A01419C8721F00109CD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7051A00519C8721F00109CD3 /* SwiftBenchmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftBenchmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70DFC0FB19CA8454005F8216 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = SwiftBenchmarks/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		70DFC0FE19CA8454005F8216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		70DFC10019CA8454005F8216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		70DFC10119CA8454005F8216 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = SwiftBenchmarks/ViewController.swift; sourceTree = SOURCE_ROOT; };
+		70DFC10219CA8454005F8216 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SwiftBenchmarks/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		70DFC10319CA8454005F8216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SwiftBenchmarks/Info.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +38,7 @@
 		70519FFC19C8721F00109CD3 = {
 			isa = PBXGroup;
 			children = (
-				7051A00719C8721F00109CD3 /* SwiftArrayDictionaryBenchmark */,
+				7051A00719C8721F00109CD3 /* SwiftBenchmarks */,
 				7051A00619C8721F00109CD3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,28 +46,29 @@
 		7051A00619C8721F00109CD3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7051A00519C8721F00109CD3 /* SwiftArrayDictionaryBenchmark.app */,
+				7051A00519C8721F00109CD3 /* SwiftBenchmarks.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7051A00719C8721F00109CD3 /* SwiftArrayDictionaryBenchmark */ = {
+		7051A00719C8721F00109CD3 /* SwiftBenchmarks */ = {
 			isa = PBXGroup;
 			children = (
-				7051A00A19C8721F00109CD3 /* AppDelegate.swift */,
-				7051A00C19C8721F00109CD3 /* ViewController.swift */,
-				7051A00E19C8721F00109CD3 /* Main.storyboard */,
-				7051A01119C8721F00109CD3 /* Images.xcassets */,
-				7051A01319C8721F00109CD3 /* LaunchScreen.xib */,
+				70DFC0FB19CA8454005F8216 /* AppDelegate.swift */,
+				70DFC10119CA8454005F8216 /* ViewController.swift */,
+				70DFC0FD19CA8454005F8216 /* LaunchScreen.xib */,
+				70DFC0FF19CA8454005F8216 /* Main.storyboard */,
+				70DFC10219CA8454005F8216 /* Images.xcassets */,
 				7051A00819C8721F00109CD3 /* Supporting Files */,
 			);
+			name = SwiftBenchmarks;
 			path = SwiftArrayDictionaryBenchmark;
 			sourceTree = "<group>";
 		};
 		7051A00819C8721F00109CD3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7051A00919C8721F00109CD3 /* Info.plist */,
+				70DFC10319CA8454005F8216 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -75,9 +76,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7051A00419C8721F00109CD3 /* SwiftArrayDictionaryBenchmark */ = {
+		7051A00419C8721F00109CD3 /* SwiftBenchmarks */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7051A02419C8721F00109CD3 /* Build configuration list for PBXNativeTarget "SwiftArrayDictionaryBenchmark" */;
+			buildConfigurationList = 7051A02419C8721F00109CD3 /* Build configuration list for PBXNativeTarget "SwiftBenchmarks" */;
 			buildPhases = (
 				7051A00119C8721F00109CD3 /* Sources */,
 				7051A00219C8721F00109CD3 /* Frameworks */,
@@ -87,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = SwiftArrayDictionaryBenchmark;
+			name = SwiftBenchmarks;
 			productName = SwiftArrayDictionaryBenchmark;
-			productReference = 7051A00519C8721F00109CD3 /* SwiftArrayDictionaryBenchmark.app */;
+			productReference = 7051A00519C8721F00109CD3 /* SwiftBenchmarks.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -106,7 +107,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7051A00019C8721F00109CD3 /* Build configuration list for PBXProject "SwiftArrayDictionaryBenchmark" */;
+			buildConfigurationList = 7051A00019C8721F00109CD3 /* Build configuration list for PBXProject "SwiftBenchmarks" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -119,7 +120,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7051A00419C8721F00109CD3 /* SwiftArrayDictionaryBenchmark */,
+				7051A00419C8721F00109CD3 /* SwiftBenchmarks */,
 			);
 		};
 /* End PBXProject section */
@@ -129,9 +130,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7051A01019C8721F00109CD3 /* Main.storyboard in Resources */,
-				7051A01519C8721F00109CD3 /* LaunchScreen.xib in Resources */,
-				7051A01219C8721F00109CD3 /* Images.xcassets in Resources */,
+				70DFC10519CA8454005F8216 /* LaunchScreen.xib in Resources */,
+				70DFC10619CA8454005F8216 /* Main.storyboard in Resources */,
+				70DFC10819CA8454005F8216 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,28 +143,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7051A00D19C8721F00109CD3 /* ViewController.swift in Sources */,
-				7051A00B19C8721F00109CD3 /* AppDelegate.swift in Sources */,
+				70DFC10419CA8454005F8216 /* AppDelegate.swift in Sources */,
+				70DFC10719CA8454005F8216 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7051A00E19C8721F00109CD3 /* Main.storyboard */ = {
+		70DFC0FD19CA8454005F8216 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7051A00F19C8721F00109CD3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7051A01319C8721F00109CD3 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7051A01419C8721F00109CD3 /* Base */,
+				70DFC0FE19CA8454005F8216 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			path = ../SwiftBenchmarks/Base.lproj;
+			sourceTree = "<group>";
+		};
+		70DFC0FF19CA8454005F8216 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70DFC10019CA8454005F8216 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ../SwiftBenchmarks/Base.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -253,9 +256,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = SwiftArrayDictionaryBenchmark/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftBenchmarks/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftBenchmarks;
 			};
 			name = Debug;
 		};
@@ -263,16 +266,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = SwiftArrayDictionaryBenchmark/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftBenchmarks/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftBenchmarks;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7051A00019C8721F00109CD3 /* Build configuration list for PBXProject "SwiftArrayDictionaryBenchmark" */ = {
+		7051A00019C8721F00109CD3 /* Build configuration list for PBXProject "SwiftBenchmarks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7051A02219C8721F00109CD3 /* Debug */,
@@ -281,7 +284,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7051A02419C8721F00109CD3 /* Build configuration list for PBXNativeTarget "SwiftArrayDictionaryBenchmark" */ = {
+		7051A02419C8721F00109CD3 /* Build configuration list for PBXNativeTarget "SwiftBenchmarks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7051A02519C8721F00109CD3 /* Debug */,
