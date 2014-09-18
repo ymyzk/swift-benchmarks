@@ -8,6 +8,38 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBAction func runDowncastBenchmark(sender: AnyObject) {
+        var start: NSDate
+        var sum: Int = 0
+        var error: NSError?
+        
+        let resourceFilePath = NSBundle.mainBundle().pathForResource("sample", ofType: "json")
+        let data = NSData(contentsOfFile: resourceFilePath!)
+        
+        start = NSDate()
+        
+        let list1 = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments, error: &error) as [[String: Int]]
+        sum = list1.reduce(0, combine: { $0 + reduce($1.values, 0, +) })
+        let result1 = -start.timeIntervalSinceNow
+        
+        start = NSDate()
+        
+        let list2 = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments, error: &error) as [AnyObject]
+        sum = list2.reduce(sum, combine: { $0 + reduce(($1 as [String: Int]).values, 0, +) })
+        let result2 = -start.timeIntervalSinceNow
+        
+        let result = String(
+            format: "%@: %.3f [sec]\n%@: %.3f [sec]\n%d",
+            "AnyObject? -> [[String: Int]]", result1,
+            "AnyObject? -> [AnyObject], AnyObject -> [String: Int]", result2, sum)
+        println(result)
+        UIAlertView(
+            title: "Result",
+            message: result,
+            delegate: nil,
+            cancelButtonTitle: "OK").show()
+    }
+    
     @IBAction func runArrayBenchmark(sender: AnyObject) {
         var start: NSDate
         

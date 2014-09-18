@@ -16,14 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIx-w8-Nu7">
-                                <rect key="frame" x="182" y="283" width="236" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WW5-uT-7M4">
+                                <rect key="frame" x="260" y="241" width="81" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="NSMutableArray / Swift Array">
+                                <state key="normal" title="Downcast">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="runArrayBenchmark:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eKc-st-bbq"/>
+                                    <action selector="runDowncastBenchmark:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xWm-bP-rk6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bag-7o-Gp9">
@@ -36,13 +36,26 @@
                                     <action selector="runDictionaryBenchmark:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5XX-9O-V5K"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIx-w8-Nu7">
+                                <rect key="frame" x="182" y="283" width="236" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="NSMutableArray / Swift Array">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="runArrayBenchmark:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eKc-st-bbq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="WW5-uT-7M4" secondAttribute="centerX" id="30Z-KH-6Jv"/>
                             <constraint firstItem="dIx-w8-Nu7" firstAttribute="centerX" secondItem="bag-7o-Gp9" secondAttribute="centerX" id="7lM-zA-0lb"/>
+                            <constraint firstItem="dIx-w8-Nu7" firstAttribute="top" secondItem="WW5-uT-7M4" secondAttribute="bottom" constant="8" id="GgI-9r-qaP"/>
                             <constraint firstAttribute="centerY" secondItem="dIx-w8-Nu7" secondAttribute="centerY" id="KfY-zX-lmP"/>
                             <constraint firstAttribute="centerX" secondItem="dIx-w8-Nu7" secondAttribute="centerX" id="NcP-Pf-Sff"/>
                             <constraint firstItem="bag-7o-Gp9" firstAttribute="top" secondItem="dIx-w8-Nu7" secondAttribute="bottom" constant="8" id="aDD-ed-o69"/>
+                            <constraint firstAttribute="centerX" secondItem="dIx-w8-Nu7" secondAttribute="centerX" id="sdz-Wg-9cl"/>
                         </constraints>
                     </view>
                 </viewController>
