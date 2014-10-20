@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         var error: NSError?
         
         let resourceFilePath = NSBundle.mainBundle().pathForResource("sample", ofType: "json")
-        let data = NSData(contentsOfFile: resourceFilePath!)
+        let data = NSData(contentsOfFile: resourceFilePath!)!
         
         start = NSDate()
         
